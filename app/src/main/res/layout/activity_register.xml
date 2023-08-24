@@ -44,7 +44,7 @@
         android:layout_gravity="center">
 
         <Button
-            android:id="@+id/login"
+            android:id="@+id/signin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/action_sign_in_short" />
@@ -54,7 +54,7 @@
             android:layout_height="match_parent" />
 
         <Button
-            android:id="@+id/signin"
+            android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

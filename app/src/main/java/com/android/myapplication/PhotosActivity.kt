@@ -12,7 +12,7 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class Photos : AppCompatActivity() {
+class PhotosActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPhotosBinding
     private val BASE_URL: String = "https://jsonplaceholder.typicode.com/"
 

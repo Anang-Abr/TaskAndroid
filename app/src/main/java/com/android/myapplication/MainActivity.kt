@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        Log.i("sampai sini", "waduh")
         binding.login.setOnClickListener {
             val username = binding.username.text.toString()
             val password = binding.password.text.toString()
@@ -21,9 +20,13 @@ class MainActivity : AppCompatActivity() {
             Log.i("password", password)
         }
 
+        binding.signin.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.viewPhoto.setOnClickListener{
-            Log.i("sampai sini2", "waduh2")
-            val intent = Intent(this, Photos::class.java)
+            val intent = Intent(this, PhotosActivity::class.java)
             startActivity(intent)
         }
     }
